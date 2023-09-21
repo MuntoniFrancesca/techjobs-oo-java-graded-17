@@ -92,4 +92,19 @@ this.coreCompetency = coreCompetency;
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    ////TASK5 CREATING A TOSTRING METHOD
+    @Override
+    public String toString(){
+    String dataNotAvailable = "Data not available";
+    return System.lineSeparator() +
+            "ID: " + (getId() != 0 ? getId() : dataNotAvailable) + System.lineSeparator() +
+            "Name: " + (getName() != null ? getName() : dataNotAvailable) + System.lineSeparator() +
+            "Employer: " + (getEmployer() != null ? getEmployer() : dataNotAvailable) + System.lineSeparator() +
+            "Location: " + (getLocation() != null ? getLocation() : dataNotAvailable) + System.lineSeparator() +
+            "Position Type: " + (getPositionType() != null ? getPositionType() : dataNotAvailable) + System.lineSeparator() +
+            "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : dataNotAvailable) +
+            System.lineSeparator();
+    }
+    ///////TASK5
 }

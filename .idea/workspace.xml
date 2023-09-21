@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Finished task 3">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Finished task 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,13 +50,13 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.JobTest.testJobsForEquality">
-    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.JobTest.testToStringAddsDataNotAvailableWhenFieldIsEmpty">
+    <configuration name="JobTest.testToStringAddsDataNotAvailableWhenFieldIsEmpty" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--debug" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -63,7 +64,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringAddsDataNotAvailableWhenFieldIsEmpty&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -74,7 +75,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testJobConstructorSetsAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -87,7 +88,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobConstructorSetsAllFields&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -98,7 +99,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +112,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -122,7 +123,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -135,7 +136,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testToStringContainsCorrectLabelsAndData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +147,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -159,7 +160,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskThree&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testToStringStartsAndEndsWithNewLine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,20 +184,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.JobTest" />
-      <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-      <item itemvalue="Gradle.JobTest.testSettingJobId" />
-      <item itemvalue="Gradle.TestTaskThree" />
+      <item itemvalue="Gradle.JobTest.testToStringAddsDataNotAvailableWhenFieldIsEmpty" />
+      <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
+      <item itemvalue="Gradle.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists" />
+      <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
+      <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-        <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-        <item itemvalue="Gradle.JobTest" />
-        <item itemvalue="Gradle.JobTest.testSettingJobId" />
-        <item itemvalue="Gradle.TestTaskThree" />
+        <item itemvalue="Gradle.JobTest.testToStringAddsDataNotAvailableWhenFieldIsEmpty" />
+        <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
+        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
+        <item itemvalue="Gradle.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists" />
       </list>
     </recent_temporary>
   </component>
@@ -225,12 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693507414232</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished task 4">
+      <option name="closed" value="true" />
+      <created>1694285163645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694285163645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished task 1-2" />
     <MESSAGE value="Finished task 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished task 3" />
+    <MESSAGE value="Finished task 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished task 4" />
   </component>
 </project>
