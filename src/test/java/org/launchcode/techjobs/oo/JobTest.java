@@ -31,8 +31,25 @@ public class JobTest {
         assertEquals("Persistence", job.getCoreCompetency().getValue());
     }
 
-//**************
-// START TASK5
+    @Test
+    public void testJobsForEquality(){
+        Job job = new Job(
+                "Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
+        int id = job.getId();
+        Job job1 = new Job(
+                "Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence")
+        );
+        assertFalse(job.equals(job1));
+    }
+
 @Test
     public void testToStringStartsAndEndsWithNewLine() {
 
@@ -65,7 +82,7 @@ public void testToStringContainsCorrectLabelsAndData() {
                     "Core Competency: " + job.getCoreCompetency().toString() +
                     System.lineSeparator());
 }
-//*****CREATING THE TEST FOR EMPTYFIELD IN PROGRESS
+
 @Test
 public void testToStringHandlesEmptyField() {
     Job job = new Job (
@@ -96,32 +113,5 @@ public void testToStringIfOnlyIdAvailable() {
         assertEquals(job.toString(), "OOPS! This job does not seem to exist.");
 }
 
-//CREATING THE TEST FOR EMPTY FIELD IN PROGRESS
-
-//*************TASK5
-
-
-
-
-
-//    ASSERT EQUALS METHOD:
-//    @Test
-//    public void testJobsForEquality(){
-//       Job job = new Job(
-//                "Product tester",
-//                new Employer("ACME"),
-//                new Location("Desert"),
-//                new PositionType("Quality control"),
-//                new CoreCompetency("Persistence"));
-//                int id = job.getId();
-//        Job job1 = new Job(
-//                "Product tester",
-//                new Employer("ACME"),
-//                new Location("Desert"),
-//                new PositionType("Quality control"),
-//                new CoreCompetency("Persistence")
-//        );
-//        assertFalse(job.equals(job1));
-//    }
 }
 
