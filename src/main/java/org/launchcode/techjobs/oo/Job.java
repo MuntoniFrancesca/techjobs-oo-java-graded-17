@@ -16,19 +16,19 @@ public class Job {
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
-public Job(){
-    id = nextId;
-    nextId++;
-}
+    public Job() {
+        id = nextId;
+        nextId++;
+    }
 
-public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
-this();
-this.name = name;
-this.employer = employer;
-this.location = location;
-this.positionType = positionType;
-this.coreCompetency = coreCompetency;
-}
+    public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
+        this();
+        this.name = name;
+        this.employer = employer;
+        this.location = location;
+        this.positionType = positionType;
+        this.coreCompetency = coreCompetency;
+    }
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
@@ -95,16 +95,22 @@ this.coreCompetency = coreCompetency;
 
     ////TASK5 CREATING A TOSTRING METHOD
     @Override
-    public String toString(){
-    String dataNotAvailable = "Data not available";
-    return System.lineSeparator() +
-            "ID: " + (getId() != 0 ? getId() : dataNotAvailable) + System.lineSeparator() +
-            "Name: " + (getName() != null ? getName() : dataNotAvailable) + System.lineSeparator() +
-            "Employer: " + (getEmployer() != null ? getEmployer() : dataNotAvailable) + System.lineSeparator() +
-            "Location: " + (getLocation() != null ? getLocation() : dataNotAvailable) + System.lineSeparator() +
-            "Position Type: " + (getPositionType() != null ? getPositionType() : dataNotAvailable) + System.lineSeparator() +
-            "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : dataNotAvailable) +
-            System.lineSeparator();
+    public String toString() {
+        String dataNotAvailable = "Data not available";
+        if (getId() != 0 && getName() == null && getEmployer() == null && getLocation() == null && getPositionType() == null && getCoreCompetency() == null) {
+            return "OOPS! This job does not seem to exist.";
+        } else {
+            return System.lineSeparator() +
+                    "ID: " + (getId() != 0 ? getId() : dataNotAvailable) + System.lineSeparator() +
+                    "Name: " + (getName() != null ? getName() : dataNotAvailable) + System.lineSeparator() +
+                    "Employer: " + (getEmployer() != null ? getEmployer() : dataNotAvailable) + System.lineSeparator() +
+                    "Location: " + (getLocation() != null ? getLocation() : dataNotAvailable) + System.lineSeparator() +
+                    "Position Type: " + (getPositionType() != null ? getPositionType() : dataNotAvailable) + System.lineSeparator() +
+                    "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : dataNotAvailable) +
+                    System.lineSeparator();
+
+
+        }
+        ///////TASK5
     }
-    ///////TASK5
 }

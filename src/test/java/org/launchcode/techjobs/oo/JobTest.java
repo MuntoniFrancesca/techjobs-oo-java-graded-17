@@ -84,6 +84,17 @@ public void testToStringHandlesEmptyField() {
             "Core Competency: Persistence" +
             System.lineSeparator());
 }
+@Test
+public void testToStringIfOnlyIdAvailable() {
+        Job job = new Job (
+                null,
+                null,
+                null,
+                null,
+                null);
+
+        assertEquals(job.toString(), "OOPS! This job does not seem to exist.");
+}
 
 //CREATING THE TEST FOR EMPTY FIELD IN PROGRESS
 
