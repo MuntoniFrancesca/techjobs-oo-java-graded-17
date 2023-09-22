@@ -48,7 +48,7 @@ public class JobTest {
 }
 
 @Test
-public void testToStringContainsLabelForEachField() {
+public void testToStringContainsCorrectLabelsAndData() {
             Job job = new Job(
             "Product tester",
             new Employer("ACME"),
@@ -67,10 +67,10 @@ public void testToStringContainsLabelForEachField() {
 }
 //*****CREATING THE TEST FOR EMPTYFIELD IN PROGRESS
 @Test
-public void testToStringAddsDataNotAvailableWhenFieldIsEmpty() {
+public void testToStringHandlesEmptyField() {
     Job job = new Job (
         "Product tester",
-            new Employer(null),
+            null,
             new Location("Desert"),
             new PositionType("Quality control"),
             new CoreCompetency("Persistence"));
