@@ -1,11 +1,14 @@
 package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.testng.annotations.BeforeTest;
 
 import static org.junit.Assert.*;
 
 public class JobTest {
     //TODO: Create your unit tests here
+
     @Test
     public void testSettingJobId() {
         Job job = new Job();
@@ -87,7 +90,7 @@ public void testToStringContainsCorrectLabelsAndData() {
 public void testToStringHandlesEmptyField() {
     Job job = new Job (
         "Product tester",
-            null,
+            new Employer(""),
             new Location("Desert"),
             new PositionType("Quality control"),
             new CoreCompetency("Persistence"));

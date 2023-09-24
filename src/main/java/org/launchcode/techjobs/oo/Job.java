@@ -103,10 +103,10 @@ public class Job {
             return System.lineSeparator() +
                     "ID: " + (getId() != 0 ? getId() : dataNotAvailable) + System.lineSeparator() +
                     "Name: " + (getName() != null ? getName() : dataNotAvailable) + System.lineSeparator() +
-                    "Employer: " + (getEmployer() != null ? getEmployer() : dataNotAvailable) + System.lineSeparator() +
-                    "Location: " + (getLocation() != null ? getLocation() : dataNotAvailable) + System.lineSeparator() +
-                    "Position Type: " + (getPositionType() != null ? getPositionType() : dataNotAvailable) + System.lineSeparator() +
-                    "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : dataNotAvailable) +
+                    "Employer: " + (getEmployer().getValue() != "" ? getEmployer() : dataNotAvailable) + System.lineSeparator() +
+                    "Location: " + (getLocation().getValue() != "" ? getLocation() : dataNotAvailable) + System.lineSeparator() +
+                    "Position Type: " + (getPositionType().getValue() != "" ? getPositionType() : dataNotAvailable) + System.lineSeparator() +
+                    "Core Competency: " + (getCoreCompetency().getValue() != "" ? getCoreCompetency() : dataNotAvailable) +
                     System.lineSeparator();
 
 
