@@ -21,6 +21,10 @@ public class Job {
         nextId++;
     }
 
+    public static void resetNextId() {
+        nextId = 1;
+    }
+
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
         this.name = name;
